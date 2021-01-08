@@ -12,6 +12,12 @@ This is a homework for the class Virology and Cryptology at UPIICSA.
 
 Run the following commands:
 
+```
+git clone https://github.com/Angel-VallejoC/rsa-encrypter.git
+cd rsa-encrypter/src
+javac Login.java
+java Login
+```
 
 ### Access the program
 Credentials for the program are hard coded in SHA since this is just 
