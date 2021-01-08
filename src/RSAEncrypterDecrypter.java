@@ -143,7 +143,7 @@ public class RSAEncrypterDecrypter extends JFrame {
 
     private void saveEncryptedFile(byte[] encryptedData, String path) throws IOException {
         File encryptedFile = new File(path);
-        if (!encryptedFile.createNewFile()){
+        if (!encryptedFile.exists() && !encryptedFile.createNewFile()) {
             JOptionPane.showMessageDialog(this, "File couldn't be saved", "Error", JOptionPane.ERROR_MESSAGE);
             return;
         }
